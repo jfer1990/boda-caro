@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Ana López García",
+    "phone": "+525512345678",
+    "confirmed": false
+  },
+  {
+    "id": 2,
+    "name": "Carlos Mendoza Silva",
+    "phone": "+525587654321",
+    "confirmed": false
+  },
+  {
+    "id": 3,
+    "name": "María Elena Vásquez",
+    "phone": "+525598765432",
+    "confirmed": false
+  },
+  {
+    "id": 4,
+    "name": "Roberto Jiménez Cruz",
+    "phone": "+525556789012",
+    "confirmed": false
+  },
+  {
+    "id": 5,
+    "name": "Patricia Morales Ruiz",
+    "phone": "+525534567890",
+    "confirmed": false
+  },
+  {
+    "id": 6,
+    "name": "Fernando Castillo López",
+    "phone": "+525523456789",
+    "confirmed": false
+  },
+  {
+    "id": 7,
+    "name": "Sofía Hernández Pérez",
+    "phone": "+525567890123",
+    "confirmed": false
+  },
+  {
+    "id": 8,
+    "name": "Diego Ramírez Torres",
+    "phone": "+525578901234",
+    "confirmed": false
+  }
+]
