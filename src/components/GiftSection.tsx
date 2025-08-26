@@ -1,13 +1,13 @@
 import React from 'react';
-import { Gift, CreditCard, Building2, Smartphone } from 'lucide-react';
+import { Gift, CreditCard, Building2, Smartphone, Star } from 'lucide-react';
 
 const GiftSection: React.FC = () => {
   const paymentOptions = [
     {
-      name: 'Transferencia Bancaria',
+      name: 'Transferencia SPEI',
       icon: Building2,
-      description: 'BBVA Bancomer',
-      action: 'Ver Datos'
+      description: 'Transferencia bancaria',
+      action: 'Ver Datos Bancarios'
     },
     {
       name: 'OXXO Pay',
@@ -18,25 +18,41 @@ const GiftSection: React.FC = () => {
     {
       name: 'PayPal',
       icon: CreditCard,
-      description: 'Pago en línea',
+      description: 'Pago en línea seguro',
       action: 'Ir a PayPal'
     }
   ];
 
   return (
-    <section className="py-16 px-6 bg-white">
-      <div className="max-w-md mx-auto text-center">
-        <Gift className="w-12 h-12 text-gold mx-auto mb-6" />
+    <section className="py-20 px-6 bg-gradient-to-b from-cream/30 to-ivory relative">
+      <div className="absolute top-16 left-10 w-2 h-2 bg-gold/20 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-12 right-12 w-1.5 h-1.5 bg-muted-green/30 rounded-full animate-pulse animation-delay-2000"></div>
+      
+      <div className="max-w-2xl mx-auto text-center">
+        <div className="flex justify-center items-center gap-2 mb-6">
+          <Star className="w-4 h-4 text-gold animate-pulse" fill="currentColor" />
+          <Gift className="w-8 h-8 text-gold" />
+          <Star className="w-4 h-4 text-gold animate-pulse animation-delay-1000" fill="currentColor" />
+        </div>
         
-        <h2 className="font-serif text-3xl md:text-4xl text-blue-900 mb-6">
+        <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-6">
           Mesa de Regalos
         </h2>
         
-        <p className="text-gray-700 mb-8 leading-relaxed">
-          Tu presencia es nuestro mayor regalo. Si deseas obsequiarnos algo, 
-          agradecemos tu contribución monetaria para nuestro nuevo hogar y 
-          la llegada de nuestra pequeña princesa.
-        </p>
+        <div className="w-16 h-px bg-gold mx-auto mb-8"></div>
+        
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-gold/20 mb-8">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
+            Su presencia es nuestro mejor regalo. Si desean hacernos un obsequio, 
+            agradecemos sus aportaciones a través de los siguientes medios.
+          </p>
+          
+          <div className="bg-gold/10 rounded-lg p-4 border border-gold/30">
+            <p className="text-sm text-charcoal/70 italic">
+              "Es mejor dar que recibir, pero recibir con gratitud también es una bendición"
+            </p>
+          </div>
+        </div>
         
         <div className="space-y-4">
           {paymentOptions.map((option, index) => {
@@ -44,17 +60,19 @@ const GiftSection: React.FC = () => {
             return (
               <button
                 key={index}
-                className="w-full bg-cream hover:bg-yellow-100 border border-gold/20 rounded-lg p-4 transition-colors duration-300 group"
+                className="w-full bg-white hover:bg-cream/30 border border-cream/50 rounded-xl p-6 transition-all duration-300 group transform hover:scale-[1.02] shadow-soft hover:shadow-lg"
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300">
                     <IconComponent className="w-6 h-6 text-gold" />
                   </div>
                   <div className="flex-1 text-left">
-                    <h3 className="font-semibold text-blue-900">{option.name}</h3>
-                    <p className="text-sm text-gray-600">{option.description}</p>
+                    <h3 className="font-semibold text-charcoal group-hover:text-muted-green transition-colors duration-300">
+                      {option.name}
+                    </h3>
+                    <p className="text-sm text-charcoal/60">{option.description}</p>
                   </div>
-                  <span className="text-sm font-medium text-blue-800">
+                  <span className="text-sm font-medium text-muted-green group-hover:text-gold transition-colors duration-300">
                     {option.action}
                   </span>
                 </div>
@@ -63,9 +81,9 @@ const GiftSection: React.FC = () => {
           })}
         </div>
         
-        <div className="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-          <p className="text-sm text-blue-800">
-            💙 Cualquier contribución será recibida con mucho amor y gratitud
+        <div className="mt-8 p-6 bg-muted-green/10 rounded-xl border border-muted-green/20">
+          <p className="text-sm text-muted-green/80">
+            💚 Cualquier contribución será recibida con mucho amor y gratitud
           </p>
         </div>
       </div>

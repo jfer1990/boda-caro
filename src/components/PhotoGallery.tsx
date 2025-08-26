@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Camera, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { Camera, ChevronLeft, ChevronRight, X, Star } from 'lucide-react';
 
 const PhotoGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -8,32 +8,32 @@ const PhotoGallery: React.FC = () => {
     {
       id: 1,
       src: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop',
-      alt: 'Elena y Esteban - Momento romántico'
+      alt: 'Elena Carolina y Esteban - Momento romántico'
     },
     {
       id: 2,
       src: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      alt: 'Elena y Esteban - Sonrisas'
+      alt: 'Elena Carolina y Esteban - Sonrisas'
     },
     {
       id: 3,
       src: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop',
-      alt: 'Elena y Esteban - Abrazo'
+      alt: 'Elena Carolina y Esteban - Abrazo'
     },
     {
       id: 4,
       src: 'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop',
-      alt: 'Elena y Esteban - Caminando'
+      alt: 'Elena Carolina y Esteban - Caminando'
     },
     {
       id: 5,
       src: 'https://images.pexels.com/photos/1024992/pexels-photo-1024992.jpeg?auto=compress&cs=tinysrgb&w=600&h=900&fit=crop',
-      alt: 'Elena y Esteban - Miradas'
+      alt: 'Elena Carolina y Esteban - Miradas'
     },
     {
       id: 6,
       src: 'https://images.pexels.com/photos/1043475/pexels-photo-1043475.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      alt: 'Elena y Esteban - Felicidad'
+      alt: 'Elena Carolina y Esteban - Felicidad'
     }
   ];
 
@@ -58,10 +58,18 @@ const PhotoGallery: React.FC = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-white relative">
+      <div className="absolute top-16 right-8 w-1.5 h-1.5 bg-gold/30 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-12 left-10 w-2 h-2 bg-soft-blue/20 rounded-full animate-pulse animation-delay-3000"></div>
+      
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <Camera className="w-8 h-8 text-gold mx-auto mb-6" />
+          <div className="flex justify-center items-center gap-2 mb-6">
+            <Star className="w-4 h-4 text-gold animate-pulse" fill="currentColor" />
+            <Camera className="w-8 h-8 text-gold" />
+            <Star className="w-4 h-4 text-gold animate-pulse animation-delay-1000" fill="currentColor" />
+          </div>
+          
           <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-4">
             Nuestros Momentos
           </h2>
@@ -79,14 +87,15 @@ const PhotoGallery: React.FC = () => {
               className="break-inside-avoid cursor-pointer group"
               onClick={() => openModal(index)}
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300 group-hover:scale-[1.02]">
+              <div className="relative overflow-hidden rounded-2xl shadow-soft hover:shadow-lg transition-all duration-500 group-hover:scale-[1.02]">
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-4 right-4 w-2 h-2 bg-gold/60 rounded-full opacity-0 group-hover:opacity-100 animate-pulse transition-opacity duration-300"></div>
               </div>
             </div>
           ))}
@@ -98,7 +107,7 @@ const PhotoGallery: React.FC = () => {
             <div className="relative max-w-4xl max-h-full">
               <button
                 onClick={closeModal}
-                className="absolute -top-12 right-0 text-white hover:text-gold transition-colors duration-200"
+                className="absolute -top-12 right-0 text-white hover:text-gold transition-colors duration-200 z-10"
               >
                 <X className="w-8 h-8" />
               </button>
@@ -111,16 +120,16 @@ const PhotoGallery: React.FC = () => {
               
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors duration-200"
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors duration-200 bg-black/30 rounded-full p-2"
               >
-                <ChevronLeft className="w-8 h-8" />
+                <ChevronLeft className="w-6 h-6" />
               </button>
               
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors duration-200"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors duration-200 bg-black/30 rounded-full p-2"
               >
-                <ChevronRight className="w-8 h-8" />
+                <ChevronRight className="w-6 h-6" />
               </button>
             </div>
           </div>

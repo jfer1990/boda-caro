@@ -5,6 +5,7 @@ import ParentsThought from './components/ParentsThought';
 import PhotoGallery from './components/PhotoGallery';
 import EventDetails from './components/EventDetails';
 import RSVPForm from './components/RSVPForm';
+import GiftSection from './components/GiftSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <PhotoGallery />
       <EventDetails />
       <RSVPForm />
+      <GiftSection />
       <Footer />
     </div>
   );

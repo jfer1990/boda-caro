@@ -1,31 +1,36 @@
 import React from 'react';
-import { Heart, Calendar } from 'lucide-react';
+import { Heart, Clock, Star } from 'lucide-react';
+import StarryBackground from './StarryBackground';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with subtle animation */}
-      <div className="absolute inset-0 bg-gradient-to-br from-ivory via-soft-beige to-muted-green opacity-90">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop')] bg-cover bg-center bg-fixed opacity-20"></div>
-        
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-gold rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute top-40 right-16 w-1 h-1 bg-gold rounded-full animate-pulse opacity-40 animation-delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-1.5 h-1.5 bg-gold rounded-full animate-pulse opacity-50 animation-delay-2000"></div>
-        <div className="absolute bottom-20 right-10 w-2 h-2 bg-gold rounded-full animate-pulse opacity-30 animation-delay-3000"></div>
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-ivory via-cream to-soft-blue/20">
+      <StarryBackground />
+      
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop')] bg-cover bg-center opacity-10"></div>
+      
+      {/* Floating Time Elements */}
+      <div className="absolute top-20 left-10 w-3 h-3 bg-gold/30 rounded-full animate-pulse"></div>
+      <div className="absolute top-32 right-16 w-2 h-2 bg-muted-green/40 rounded-full animate-pulse animation-delay-1000"></div>
+      <div className="absolute bottom-40 left-20 w-2.5 h-2.5 bg-gold/20 rounded-full animate-pulse animation-delay-2000"></div>
+      <div className="absolute bottom-24 right-12 w-3 h-3 bg-soft-blue/30 rounded-full animate-pulse animation-delay-3000"></div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="mb-8">
-          <Heart className="w-8 h-8 text-gold mx-auto mb-6 animate-pulse" fill="currentColor" />
+          <div className="flex justify-center items-center gap-3 mb-6">
+            <Star className="w-5 h-5 text-gold animate-pulse" fill="currentColor" />
+            <Clock className="w-6 h-6 text-muted-green" />
+            <Star className="w-5 h-5 text-gold animate-pulse" fill="currentColor" />
+          </div>
         </div>
         
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-charcoal mb-6 leading-tight">
           Elena Carolina
-          <span className="block text-3xl md:text-4xl lg:text-5xl text-muted-green mt-2 font-light">
+          <span className="block text-2xl md:text-3xl lg:text-4xl text-muted-green mt-3 font-light">
             &
           </span>
-          <span className="block">Esteban</span>
+          <span className="block mt-2">Esteban</span>
         </h1>
         
         <div className="w-24 h-px bg-gold mx-auto mb-8"></div>
@@ -34,9 +39,24 @@ const HeroSection: React.FC = () => {
           Nos complace invitarte a celebrar nuestra unión en matrimonio
         </p>
         
-        <div className="flex items-center justify-center gap-3 text-muted-green">
-          <Calendar className="w-5 h-5" />
-          <span className="text-lg font-medium">Próximamente</span>
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gold/20 shadow-soft max-w-md mx-auto">
+          <div className="flex items-center justify-center gap-2 text-muted-green mb-4">
+            <Clock className="w-5 h-5" />
+            <span className="text-lg font-medium">Fecha de la Ceremonia</span>
+          </div>
+          
+          <h2 className="font-serif text-2xl md:text-3xl text-charcoal mb-2">
+            4 de Octubre
+          </h2>
+          
+          <p className="text-lg text-charcoal/70 mb-3">
+            Mérida, Yucatán
+          </p>
+          
+          <div className="bg-gold/10 rounded-lg p-3 border border-gold/30">
+            <p className="text-sm text-charcoal/60 mb-1">Hora de la ceremonia</p>
+            <p className="text-lg font-semibold text-charcoal">[Hora por confirmar]</p>
+          </div>
         </div>
       </div>
     </section>

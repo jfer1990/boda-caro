@@ -1,50 +1,66 @@
 [
   {
     "id": 1,
-    "name": "Ana López García",
+    "name": "María López García",
     "phone": "+525512345678",
-    "confirmed": false
+    "maxGuests": 2,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 2,
-    "name": "Carlos Mendoza Silva",
+    "name": "Carlos Hernández Silva",
     "phone": "+525587654321",
-    "confirmed": false
+    "maxGuests": 3,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 3,
-    "name": "María Elena Vásquez",
+    "name": "Ana Martínez Rodríguez",
     "phone": "+525598765432",
-    "confirmed": false
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 4,
     "name": "Roberto Jiménez Cruz",
     "phone": "+525556789012",
-    "confirmed": false
+    "maxGuests": 4,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 5,
     "name": "Patricia Morales Ruiz",
     "phone": "+525534567890",
-    "confirmed": false
+    "maxGuests": 2,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 6,
     "name": "Fernando Castillo López",
     "phone": "+525523456789",
-    "confirmed": false
+    "maxGuests": 3,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 7,
     "name": "Sofía Hernández Pérez",
     "phone": "+525567890123",
-    "confirmed": false
+    "maxGuests": 2,
+    "confirmed": false,
+    "companions": []
   },
   {
     "id": 8,
     "name": "Diego Ramírez Torres",
     "phone": "+525578901234",
-    "confirmed": false
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": []
   }
 ]
