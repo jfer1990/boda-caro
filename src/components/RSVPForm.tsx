@@ -66,11 +66,46 @@ const RSVPForm: React.FC = () => {
     setCompanions(updated);
   };
 
+    const generateICS = () => {
+        const title = "Boda de Carolina Rodríguez y Esteban Pacheco";
+  const description = "Celebración de la boda de Carolina y Esteban. ¡No faltes!";
+  const location = "Dirección del evento, Ciudad, México";
+      const startDate = new Date(Date.UTC(2025, 9, 4, 18, 0, 0)); // Mes 9 = octubre (0-based)
+    const endDate = new Date(Date.UTC(2025, 9, 4, 23, 0, 0));
+    const formatDate = (date:any) =>
+      date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+
+    return (
+      `BEGIN:VCALENDAR\n` +
+      `VERSION:2.0\n` +
+      `BEGIN:VEVENT\n` +
+      `DTSTART:${formatDate(startDate)}\n` +
+      `DTEND:${formatDate(endDate)}\n` +
+      `SUMMARY:${title}\n` +
+      `DESCRIPTION:${description}\n` +
+      `LOCATION:${location}\n` +
+      `END:VEVENT\n` +
+      `END:VCALENDAR`
+    );
+  };
+
+    const handleDownload = () => {
+      const blob = new Blob([generateICS()], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Boda_Carolina_Esteban.ics";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  };
   const confirmAttendance = () => {
     if (selectedGuest) {
+      handleDownload(); 
       setIsConfirmed(true);
       console.log('Confirmed attendance for:', selectedGuest.name, 'with companions:', companions.filter(c => c.trim()));
     }
+    
   };
 
   const reset = () => {
@@ -103,7 +138,7 @@ const RSVPForm: React.FC = () => {
           </p>
         </div>
         
-        <div className="bg-ivory rounded-2xl p-8 shadow-soft border border-cream/50 relative overflow-hidden">
+        <div className="bg-ivory rounded-2xl p-8 shadow-soft border border-cream/50 relative">
           <div className="absolute top-4 right-4 w-1 h-1 bg-muted-green/40 rounded-full animate-pulse"></div>
           
           {!isConfirmed ? (
@@ -199,7 +234,7 @@ const RSVPForm: React.FC = () => {
                   
                   <button
                     onClick={confirmAttendance}
-                    className="w-full bg-gradient-to-r from-muted-green to-muted-green/90 hover:from-muted-green/90 hover:to-muted-green text-white font-medium py-4 px-6 rounded-full transition-all duration-300 transform hover:scale-[1.02] shadow-soft"
+                    className="w-full bg-gradient-to-r from-muted-green to-muted-green/90 hover:from-muted-green/90 hover:to-muted-green text-black font-medium py-4 px-6 rounded-full transition-all duration-300 transform hover:scale-[1.02] shadow-soft"
                   >
                     Confirmar Asistencia
                   </button>
