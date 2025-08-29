@@ -1,66 +1,254 @@
 [
   {
     "id": 1,
-    "name": "María López García",
-    "phone": "+525512345678",
-    "maxGuests": 2,
+    "name": "Luis Fernando Rodríguez Fernández",
+    "maxGuests": 1,
     "confirmed": false,
-    "companions": []
+    "companions": ["Gladys Elena Díaz Aguilar"]
   },
   {
     "id": 2,
-    "name": "Carlos Hernández Silva",
-    "phone": "+525587654321",
-    "maxGuests": 3,
+    "name": "Juan Fernando Rodríguez Díaz",
+    "maxGuests": 2,
     "confirmed": false,
-    "companions": []
+    "companions": ["Diletta Cipriani Grilli", "Gabriel Octavio Rodríguez Cipriani"]
   },
   {
     "id": 3,
-    "name": "Ana Martínez Rodríguez",
-    "phone": "+525598765432",
-    "maxGuests": 1,
+    "name": "Lilia Esther Tamayo Erguera",
+    "maxGuests": 4,
     "confirmed": false,
-    "companions": []
+    "companions": ["Yolanda", "Elizabeth", "Betty", "Victor"]
   },
   {
     "id": 4,
-    "name": "Roberto Jiménez Cruz",
-    "phone": "+525556789012",
-    "maxGuests": 4,
+    "name": "Alex Iván Tamayo Erguera",
+    "maxGuests": 0,
     "confirmed": false,
     "companions": []
   },
   {
     "id": 5,
-    "name": "Patricia Morales Ruiz",
-    "phone": "+525534567890",
+    "name": "Rosaura Violeta Tamayo Erguera",
     "maxGuests": 2,
     "confirmed": false,
-    "companions": []
+    "companions": ["Carla Kan Tamayo", "Carlos Humberto Kan Gómez"]
   },
   {
     "id": 6,
-    "name": "Fernando Castillo López",
-    "phone": "+525523456789",
-    "maxGuests": 3,
+    "name": "Alfredo Tamayo Erguera",
+    "maxGuests": 2,
     "confirmed": false,
-    "companions": []
+    "companions": ["Yazmín", "Alfredito"]
   },
   {
     "id": 7,
-    "name": "Sofía Hernández Pérez",
-    "phone": "+525567890123",
-    "maxGuests": 2,
+    "name": "Elmar Bauer",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Alejandra Tamayo"]
+  },
+  {
+    "id": 8,
+    "name": "Marco",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Alondra Tamayo"]
+  },
+  {
+    "id": 9,
+    "name": "Jose Luis Ochoa Cáceres",
+    "maxGuests": 0,
     "confirmed": false,
     "companions": []
   },
   {
-    "id": 8,
-    "name": "Diego Ramírez Torres",
-    "phone": "+525578901234",
+    "id": 10,
+    "name": "Miriam Rios",
     "maxGuests": 1,
     "confirmed": false,
+    "companions": ["David Pacheco"]
+  },
+  {
+    "id": 11,
+    "name": "Ariel Meléndez Nuñez",
+    "maxGuests": 2,
+    "confirmed": false,
+    "companions": ["Rita Cecilia de Guadalupe Díaz Aguilar", "Cindy Griselle Meléndez Díaz"]
+  },
+  {
+    "id": 12,
+    "name": "Edward Puerto Andueza",
+    "maxGuests": 3,
+    "confirmed": false,
+    "companions": ["Astrid Victoria Meléndez Díaz", "Leonardo", "Ian"]
+  },
+  {
+    "id": 13,
+    "name": "Rosemberg Guirao Martínez",
+    "maxGuests": 3,
+    "confirmed": false,
+    "companions": ["Orielle Meléndez Díaz", "Mateo", "Samuel"]
+  },
+  {
+    "id": 14,
+    "name": "María Leticia del Carmen Díaz Aguilar",
+    "maxGuests": 0,
+    "confirmed": false,
     "companions": []
+  },
+  {
+    "id": 15,
+    "name": "Rosa Ileana Díaz Aguilar",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 16,
+    "name": "Sandra Maribel Díaz Aguilar",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 17,
+    "name": "Roger Ariel May Campos",
+    "maxGuests": 2,
+    "confirmed": false,
+    "companions": ["Elsy Díaz Aguilar", "Roger Maximiliano May Díaz"]
+  },
+  {
+    "id": 18,
+    "name": "Sagrario Guadalupe Ortíz Pasos",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 19,
+    "name": "Alejandrina de Guadalupe Salazar Lizárraga",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 20,
+    "name": "Adriana Domínguez Domínguez",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Jorge"]
+  },
+  {
+    "id": 21,
+    "name": "José Eduardo Rubio Fernández",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 22,
+    "name": "Rafael René Castillo Martínez",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Adriana Martínez"]
+  },
+  {
+    "id": 23,
+    "name": "Diego Mauricio García Calderon",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 24,
+    "name": "Axel Javier Alayola Rosales",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 25,
+    "name": "Wendy Rosana González Carvajal",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 26,
+    "name": "Valentina Delgado Duarte",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Emiliano"]
+  },
+  {
+    "id": 27,
+    "name": "Sara Luz Rocha Vargas",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": [""]
+  },
+  {
+    "id": 28,
+    "name": "Aurora Cipriani Grilli",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Marcelo"]
+  },
+  {
+    "id": 29,
+    "name": "Rodrigo Moguel",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 30,
+    "name": "Irene Barroso",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 31,
+    "name": "Lulú Marcial Cerón",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 32,
+    "name": "Varinia René Ortegon Heredia",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Alan"]
+  },
+  {
+    "id": 33,
+    "name": "Marbella Lizama",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 34,
+    "name": "Genesis Montes",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 35,
+    "name": "Daniela Quijano",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": []
+  },
+  {
+    "id": 36,
+    "name": "María de Jesús Martínez",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Sergio Prieto"]
   }
 ]
