@@ -14,7 +14,7 @@ const ParentsSection: React.FC = () => {
             Nuestras Familias
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mb-6"></div>
-          <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+          <p className="text-lg text-charcoal text-opacity-70 max-w-2xl mx-auto">
             Con el amor y bendición de nuestros padres
           </p>
         </div>
@@ -38,7 +38,7 @@ const ParentsSection: React.FC = () => {
                   <p className="text-lg font-medium text-charcoal">
                     Luis Fernando Rodríguez Fernández
                   </p>
-                  <p className="text-charcoal/60 text-sm">Papá</p>
+                  <p className="text-charcoal text-opacity-60 text-sm">Papá</p>
                 </div>
                 
                 <div className="w-8 h-px bg-gold/30 mx-auto"></div>
@@ -47,7 +47,7 @@ const ParentsSection: React.FC = () => {
                   <p className="text-lg font-medium text-charcoal">
                     Gladys Elena Díaz Aguilar
                   </p>
-                  <p className="text-charcoal/60 text-sm">Mamá</p>
+                  <p className="text-charcoal text-opacity-60 text-sm">Mamá</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const ParentsSection: React.FC = () => {
                   <p className="text-lg font-medium text-charcoal">
                     Humberto Pacheco
                   </p>
-                  <p className="text-charcoal/60 text-sm">Papá</p>
+                  <p className="text-charcoal text-opacity-60 text-sm">Papá</p>
                 </div>
                 
                 <div className="w-8 h-px bg-gold/30 mx-auto"></div>
@@ -80,7 +80,7 @@ const ParentsSection: React.FC = () => {
                   <p className="text-lg font-medium text-charcoal">
                     Lili Tamayo
                   </p>
-                  <p className="text-charcoal/60 text-sm">Mamá</p>
+                  <p className="text-charcoal text-opacity-60 text-sm">Mamá</p>
                 </div>
               </div>
             </div>

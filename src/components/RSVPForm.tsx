@@ -174,7 +174,7 @@ const RSVPForm: React.FC = () => {
                         className="w-full px-4 py-3 text-left hover:bg-cream/30 transition-colors duration-200 border-b border-cream/30 last:border-b-0"
                       >
                         <div className="font-medium text-charcoal">{guest.name}</div>
-                        <div className="text-sm text-charcoal/60">
+                        <div className="text-sm text-charcoal text-opacity-60">
                           Máximo {guest.maxGuests} {guest.maxGuests === 1 ? 'persona' : 'personas'}
                         </div>
                       </button>
@@ -194,11 +194,11 @@ const RSVPForm: React.FC = () => {
 
                   {selectedGuest.companions.length > 0 && (
                     <div className="space-y-2">
-                      <span className="text-sm text-charcoal/70 flex items-center gap-2">
+                      <span className="text-sm text-charcoal text-opacity-70 flex items-center gap-2">
                         <Users className="w-4 h-4" /> Selecciona tus acompañantes:
                       </span>
                       {selectedGuest.companions.map((companion, index) => (
-                        <label key={index} className="flex items-center gap-2 text-charcoal/80">
+                        <label key={index} className="flex items-center gap-2 text-charcoal text-opacity-80">
                           <input
                             type="checkbox"
                             checked={selectedCompanions.includes(companion)}
@@ -234,7 +234,7 @@ const RSVPForm: React.FC = () => {
                 <Check className="w-8 h-8 text-muted-green" />
               </div>
               <h3 className="text-2xl font-medium text-charcoal mb-4">¡Confirmado!</h3>
-              <p className="text-charcoal/70 mb-6">
+              <p className="text-charcoal text-opacity-70 mb-6">
                 Gracias por confirmar tu asistencia. ¡Te esperamos con mucha ilusión!
               </p>
               <button

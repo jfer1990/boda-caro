@@ -20,7 +20,7 @@ const EventDetails: React.FC = () => {
             Detalles del Evento
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mb-6"></div>
-          <p className="text-lg text-charcoal/70">
+          <p className="text-lg text-charcoal text-opacity-70">
             Acompáñanos en este día tan especial
           </p>
         </div>
@@ -38,21 +38,21 @@ const EventDetails: React.FC = () => {
             </div>
             
             <div className="space-y-4 text-center mb-6">
-              <div className="flex items-center justify-center gap-2 text-charcoal/70">
+              <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Calendar className="w-4 h-4" />
                 <span>4 de Octubre, 2024</span>
               </div>
               
-              <div className="flex items-center justify-center gap-2 text-charcoal/70">
+              <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Clock className="w-4 h-4" />
                 <span>[Hora por confirmar]</span>
               </div>
               
               <div className="pt-4 border-t border-cream/50">
-                <p className="text-charcoal/70 text-sm mb-2">
+                <p className="text-charcoal text-opacity-70 text-sm mb-2">
                   [Dirección de la iglesia por confirmar]
                 </p>
-                <p className="text-charcoal/60 text-xs">
+                <p className="text-charcoal text-opacity-60 text-xs">
                   Mérida, Yucatán
                 </p>
               </div>
@@ -79,21 +79,21 @@ const EventDetails: React.FC = () => {
             </div>
             
             <div className="space-y-4 text-center mb-6">
-              <div className="flex items-center justify-center gap-2 text-charcoal/70">
+              <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Calendar className="w-4 h-4" />
                 <span>4 de Octubre, 2024</span>
               </div>
               
-              <div className="flex items-center justify-center gap-2 text-charcoal/70">
+              <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Clock className="w-4 h-4" />
                 <span>[Hora por confirmar]</span>
               </div>
               
               <div className="pt-4 border-t border-cream/50">
-                <p className="text-charcoal/70 text-sm mb-2">
+                <p className="text-charcoal text-opacity-70 text-sm mb-2">
                   [Dirección del salón por confirmar]
                 </p>
-                <p className="text-charcoal/60 text-xs">
+                <p className="text-charcoal text-opacity-60 text-xs">
                   Mérida, Yucatán
                 </p>
               </div>

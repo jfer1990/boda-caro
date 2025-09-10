@@ -42,13 +42,13 @@ const GiftSection: React.FC = () => {
         <div className="w-16 h-px bg-gold mx-auto mb-8"></div>
         
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-gold/20 mb-8">
-          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal text-opacity-80 leading-relaxed mb-6">
             Su presencia es nuestro mejor regalo. Si desean hacernos un obsequio, 
             agradecemos sus aportaciones a través de los siguientes medios.
           </p>
           
           <div className="bg-gold/10 rounded-lg p-4 border border-gold/30">
-            <p className="text-sm text-charcoal/70 italic">
+            <p className="text-sm text-charcoal text-opacity-70 italic">
               "Es mejor dar que recibir, pero recibir con gratitud también es una bendición"
             </p>
           </div>
@@ -70,7 +70,7 @@ const GiftSection: React.FC = () => {
                     <h3 className="font-semibold text-charcoal group-hover:text-muted-green transition-colors duration-300">
                       {option.name}
                     </h3>
-                    <p className="text-sm text-charcoal/60">{option.description}</p>
+                    <p className="text-sm text-charcoal text-opacity-60">{option.description}</p>
                   </div>
                   <span className="text-sm font-medium text-muted-green group-hover:text-gold transition-colors duration-300">
                     {option.action}
@@ -82,7 +82,7 @@ const GiftSection: React.FC = () => {
         </div>
         
         <div className="mt-8 p-6 bg-muted-green/10 rounded-xl border border-muted-green/20">
-          <p className="text-sm text-muted-green/80">
+          <p className="text-sm text-muted-green text-opacity-80">
             💚 Cualquier contribución será recibida con mucho amor y gratitud
           </p>
         </div>
