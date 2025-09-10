@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
 import ParentsSection from './components/ParentsSection';
 import ParentsThought from './components/ParentsThought';
@@ -10,16 +11,43 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-ivory">
-      <HeroSection />
-      <ParentsSection />
-      <ParentsThought />
-      <PhotoGallery />
-      <EventDetails />
-      <RSVPForm />
-      <GiftSection />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        {/* Ruta principal */}
+        <Route
+          path="/"
+          element={
+            <div className="min-h-screen bg-ivory">
+              <HeroSection />
+              <ParentsSection />
+              <ParentsThought />
+              <PhotoGallery />
+              <EventDetails />
+              <RSVPForm />
+              <GiftSection />
+              <Footer />
+            </div>
+          }
+        />
+
+        {/* Ruta específica por slug */}
+        <Route
+          path="/rsvp/:slug"
+          element={
+            <div className="min-h-screen bg-ivory">
+              <HeroSection />
+              <ParentsSection />
+              <ParentsThought />
+              <PhotoGallery />
+              <EventDetails />
+              <RSVPForm />
+              <GiftSection />
+              <Footer />
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
