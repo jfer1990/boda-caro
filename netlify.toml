@@ -1,0 +1,10 @@
+[build]
+  # Carpeta donde Vite genera los archivos para producción
+  publish = "dist"
+  command = "npm run build"
+
+# Redirigir todas las rutas a index.html para que React Router funcione
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
