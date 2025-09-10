@@ -21,7 +21,7 @@ const ParentsThought: React.FC = () => {
           
           <div className="w-24 h-px bg-gold mx-auto mb-6"></div>
           
-          <p className="text-lg text-charcoal/70 font-light">
+          <p className="text-lg text-charcoal text-opacity-70 font-light">
             Con todo nuestro amor,
             <br />
             <span className="font-medium text-muted-green">Las familias Rodríguez-Díaz y Pacheco-Tamayo</span>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Heart, Clock, Star } from 'lucide-react';
 import StarryBackground from './StarryBackground';
+import bodaCaro2 from '../assets/images/bodacaro4.png'; 
+
 
 const HeroSection: React.FC = () => {
   return (
@@ -17,12 +19,17 @@ const HeroSection: React.FC = () => {
       <div className="absolute bottom-24 right-12 w-3 h-3 bg-soft-blue/30 rounded-full animate-pulse animation-delay-3000"></div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="mb-8">
-          <div className="flex justify-center items-center gap-3 mb-6">
+        <div className="mb-8 relative">
+          <div className="absolute flex justify-center items-center gap-3 mb-6">
             <Star className="w-5 h-5 text-gold animate-pulse" fill="currentColor" />
             <Clock className="w-6 h-6 text-muted-green" />
             <Star className="w-5 h-5 text-gold animate-pulse" fill="currentColor" />
           </div>
+            <img
+            style={{objectFit:'contain', height:'100%', margin:'auto', maxWidth:'50vw'}}
+                src={bodaCaro2}
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
         </div>
         
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-charcoal mb-6 leading-tight">
@@ -35,7 +42,7 @@ const HeroSection: React.FC = () => {
         
         <div className="w-24 h-px bg-gold mx-auto mb-8"></div>
         
-        <p className="text-lg md:text-xl text-charcoal/80 mb-8 font-light leading-relaxed">
+        <p className="text-lg md:text-xl text-charcoal text-opacity-80 mb-8 font-light leading-relaxed">
           Nos complace invitarte a celebrar nuestra unión en matrimonio
         </p>
         
@@ -49,12 +56,12 @@ const HeroSection: React.FC = () => {
             4 de Octubre
           </h2>
           
-          <p className="text-lg text-charcoal/70 mb-3">
+          <p className="text-lg text-charcoal text-opacity-70 mb-3">
             Mérida, Yucatán
           </p>
           
           <div className="bg-gold/10 rounded-lg p-3 border border-gold/30">
-            <p className="text-sm text-charcoal/60 mb-1">Hora de la ceremonia</p>
+            <p className="text-sm text-charcoal text-opacity-60 mb-1">Hora de la ceremonia</p>
             <p className="text-lg font-semibold text-charcoal">[Hora por confirmar]</p>
           </div>
         </div>

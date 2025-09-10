@@ -4,251 +4,322 @@
     "name": "Luis Fernando Rodríguez Fernández",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Gladys Elena Díaz Aguilar"]
+    "companions": ["Gladys Elena Díaz Aguilar"],
+    "family": "Rodríguez Díaz",
+    "slug": "luis-rodriguez-fer"
   },
   {
     "id": 2,
     "name": "Juan Fernando Rodríguez Díaz",
     "maxGuests": 2,
     "confirmed": false,
-    "companions": ["Diletta Cipriani Grilli", "Gabriel Octavio Rodríguez Cipriani"]
+    "companions": ["Diletta Cipriani Grilli", "Gabriel Octavio Rodríguez Cipriani"],
+    "family": "Rodríguez Cipriani",
+    "slug": "juan-rodriguez-dia"
   },
   {
     "id": 3,
     "name": "Lilia Esther Tamayo Erguera",
-    "maxGuests": 4,
+    "maxGuests": 7,
     "confirmed": false,
-    "companions": ["Yolanda", "Elizabeth", "Betty", "Victor"]
+    "companions": [
+      "Inocencio Ochoa Tamayo",
+      "Elizabeth Tamayo Erguera",
+      "Yolanda Martínez",
+      "Lizbeth Briceño",
+      "Víctor Becerra",
+      "Acompañante 1",
+      "Acompañante 2"
+    ],
+    "family": "Aquí hay 2 familiares y 5 amigos…",
+    "slug": "lilia-tamayo-erg"
   },
   {
     "id": 4,
     "name": "Alex Iván Tamayo Erguera",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "alex-tamayo-erg"
   },
   {
     "id": 5,
     "name": "Rosaura Violeta Tamayo Erguera",
     "maxGuests": 2,
     "confirmed": false,
-    "companions": ["Carla Kan Tamayo", "Carlos Humberto Kan Gómez"]
+    "companions": ["Carla Can Tamayo", "Carlos Humberto Can Gómez"],
+    "family": "Can Tamayo",
+    "slug": "rosaura-tamayo-erg"
   },
   {
     "id": 6,
     "name": "Alfredo Tamayo Erguera",
     "maxGuests": 2,
     "confirmed": false,
-    "companions": ["Yazmín", "Alfredito"]
+    "companions": ["Yazmín Cortés Sobrino", "Alfredo Tamayo Cortés"],
+    "family": "Tamayo Cortés",
+    "slug": "alfredo-tamayo-erg"
   },
   {
     "id": 7,
     "name": "Elmar Bauer",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Alejandra Tamayo"]
+    "companions": ["Alejandra Bauer Tamayo"],
+    "family": "Bauer Tamayo",
+    "slug": "elmar-bauer"
   },
   {
     "id": 8,
-    "name": "Marco",
+    "name": "Marco Romero",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Alondra Tamayo"]
+    "companions": ["Alondra Tamayo Cortés"],
+    "family": "Romero Tamayo",
+    "slug": "marco-romero"
   },
   {
     "id": 9,
-    "name": "Jose Luis Ochoa Cáceres",
-    "maxGuests": 0,
+    "name": "Miriam Río",
+    "maxGuests": 1,
     "confirmed": false,
-    "companions": []
+    "companions": ["David Antonio Esquivel Pacheco"],
+    "family": "Pacheco Río",
+    "slug": "miriam-rio"
   },
   {
     "id": 10,
-    "name": "Miriam Rios",
-    "maxGuests": 1,
-    "confirmed": false,
-    "companions": ["David Pacheco"]
-  },
-  {
-    "id": 11,
     "name": "Ariel Meléndez Nuñez",
     "maxGuests": 2,
     "confirmed": false,
-    "companions": ["Rita Cecilia de Guadalupe Díaz Aguilar", "Cindy Griselle Meléndez Díaz"]
+    "companions": ["Rita Cecilia de Guadalupe Díaz Aguilar", "Cindy Griselle Meléndez Díaz"],
+    "family": "Meléndez Díaz",
+    "slug": "ariel-melendez-nun"
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "Edward Puerto Andueza",
     "maxGuests": 3,
     "confirmed": false,
-    "companions": ["Astrid Victoria Meléndez Díaz", "Leonardo", "Ian"]
+    "companions": ["Astrid Victoria Meléndez Díaz", "Leonardo", "Ian"],
+    "family": "Puerto Meléndez",
+    "slug": "edward-puerto-and"
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Rosemberg Guirao Martínez",
     "maxGuests": 3,
     "confirmed": false,
-    "companions": ["Orielle Meléndez Díaz", "Mateo", "Samuel"]
+    "companions": ["Orielle Meléndez Díaz", "Mateo", "Samuel"],
+    "family": "Guirao Meléndez",
+    "slug": "rosemberg-guirao-mar"
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "María Leticia del Carmen Díaz Aguilar",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "maria-diaz-agu"
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Rosa Ileana Díaz Aguilar",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "rosa-diaz-agu"
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "Sandra Maribel Díaz Aguilar",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "sandra-diaz-agu"
   },
   {
-    "id": 17,
+    "id": 16,
     "name": "Roger Ariel May Campos",
     "maxGuests": 2,
     "confirmed": false,
-    "companions": ["Elsy Díaz Aguilar", "Roger Maximiliano May Díaz"]
+    "companions": ["Elsy Díaz Aguilar", "Roger Maximiliano May Díaz"],
+    "family": "May Díaz",
+    "slug": "roger-may-cam"
   },
   {
-    "id": 18,
+    "id": 17,
     "name": "Sagrario Guadalupe Ortíz Pasos",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "sagrario-ortiz-pas"
   },
   {
-    "id": 19,
+    "id": 18,
     "name": "Alejandrina de Guadalupe Salazar Lizárraga",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "alejandrina-salazar-liz"
   },
   {
-    "id": 20,
+    "id": 19,
     "name": "Adriana Domínguez Domínguez",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Jorge"]
+    "companions": ["Jorge David Pimentel Torres"],
+    "family": "n/a",
+    "slug": "adriana-dominguez-dom"
   },
   {
-    "id": 21,
+    "id": 20,
     "name": "José Eduardo Rubio Fernández",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "jose-rubio-fer"
   },
   {
-    "id": 22,
+    "id": 21,
     "name": "Rafael René Castillo Martínez",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Adriana Martínez"]
+    "companions": ["Karen Adriana Martínez Ríos"],
+    "family": "n/a",
+    "slug": "rafael-castillo-mar"
   },
   {
-    "id": 23,
+    "id": 22,
     "name": "Diego Mauricio García Calderon",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "diego-garcia-cal"
   },
   {
-    "id": 24,
+    "id": 23,
     "name": "Axel Javier Alayola Rosales",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "axel-alayola-ros"
   },
   {
-    "id": 25,
+    "id": 24,
     "name": "Wendy Rosana González Carvajal",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "wendy-gonzalez-car"
   },
   {
-    "id": 26,
+    "id": 25,
     "name": "Valentina Delgado Duarte",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Emiliano"]
+    "companions": ["Emiliano Estrada Rodríguez"],
+    "family": "n/a",
+    "slug": "valentina-delgado-dua"
   },
   {
-    "id": 27,
+    "id": 26,
     "name": "Sara Luz Rocha Vargas",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": [""]
+    "companions": [],
+    "family": "n/a",
+    "slug": "sara-rocha-var"
   },
   {
-    "id": 28,
+    "id": 27,
     "name": "Aurora Cipriani Grilli",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Marcelo"]
+    "companions": ["Marcelo Rivas Cipriani"],
+    "family": "Rivas Cipriani??",
+    "slug": "aurora-cipriani-gri"
+  },
+  {
+    "id": 28,
+    "name": "Rodrigo José Moguel Escalante",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": [],
+    "family": "n/a",
+    "slug": "rodrigo-moguel-esc"
   },
   {
     "id": 29,
-    "name": "Rodrigo Moguel",
+    "name": "Irene Barroso Dorantes",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "irene-barroso-dor"
   },
   {
     "id": 30,
-    "name": "Irene Barroso",
+    "name": "María de Lourdes Marcial Cerón",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "maria-marcial-cer"
   },
   {
     "id": 31,
-    "name": "Lulú Marcial Cerón",
-    "maxGuests": 0,
+    "name": "Varinia Renee Ortegón Heredia",
+    "maxGuests": 1,
     "confirmed": false,
-    "companions": []
+    "companions": ["Alan René Solís Ley"],
+    "family": "n/a",
+    "slug": "varinia-ortegon-her"
   },
   {
     "id": 32,
-    "name": "Varinia René Ortegon Heredia",
-    "maxGuests": 1,
+    "name": "Marbella del Socorro Lizama Ortegón",
+    "maxGuests": 0,
     "confirmed": false,
-    "companions": ["Alan"]
+    "companions": [],
+    "family": "n/a",
+    "slug": "marbella-lizama-ort"
   },
   {
     "id": 33,
-    "name": "Marbella Lizama",
+    "name": "Génesis Eunice Alamilla Montes",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "genesis-alamilla-mon"
   },
   {
     "id": 34,
-    "name": "Genesis Montes",
+    "name": "Daniela Quijano Cuéllar",
     "maxGuests": 0,
     "confirmed": false,
-    "companions": []
+    "companions": [],
+    "family": "n/a",
+    "slug": "daniela-quijano-cue"
   },
   {
     "id": 35,
-    "name": "Daniela Quijano",
-    "maxGuests": 0,
-    "confirmed": false,
-    "companions": []
-  },
-  {
-    "id": 36,
-    "name": "María de Jesús Martínez",
+    "name": "María de Jesús Martínez Herrera",
     "maxGuests": 1,
     "confirmed": false,
-    "companions": ["Sergio Prieto"]
+    "companions": ["Sergio Luis Prieto Silva"],
+    "family": "n/a",
+    "slug": "maria-martinez-her"
   }
 ]

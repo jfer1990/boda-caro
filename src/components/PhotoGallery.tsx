@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import { Camera, ChevronLeft, ChevronRight, X, Star } from 'lucide-react';
+import bodaCaro1 from '../assets/images/bodaGal1.jpg'; 
+import bodaCaro2 from '../assets/images/bodaGal2.jpg'; 
+import bodaCaro3 from '../assets/images/bodaGal3.jpg'; 
+import bodaCaro4 from '../assets/images/bodaGal4.jpg'; 
+import bodaCaro5 from '../assets/images/bodaGal5.jpg'; 
+import bodaCaro6 from '../assets/images/bodaGal6.jpg'; 
+
+
 
 const PhotoGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -7,34 +15,34 @@ const PhotoGallery: React.FC = () => {
   const photos = [
     {
       id: 1,
-      src: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop',
+      src: bodaCaro1,
       alt: 'Elena Carolina y Esteban - Momento romántico'
     },
     {
       id: 2,
-      src: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: bodaCaro2,
       alt: 'Elena Carolina y Esteban - Sonrisas'
     },
     {
       id: 3,
-      src: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop',
-      alt: 'Elena Carolina y Esteban - Abrazo'
+      src: bodaCaro3,
+      alt: 'Elena Carolina y Esteban - Celebración'
     },
     {
       id: 4,
-      src: 'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop',
-      alt: 'Elena Carolina y Esteban - Caminando'
+      src: bodaCaro4,
+      alt: 'Elena Carolina y Esteban - Baile juntos'
     },
     {
       id: 5,
-      src: 'https://images.pexels.com/photos/1024992/pexels-photo-1024992.jpeg?auto=compress&cs=tinysrgb&w=600&h=900&fit=crop',
-      alt: 'Elena Carolina y Esteban - Miradas'
+      src: bodaCaro5,
+      alt: 'Elena Carolina y Esteban - Detalles de la boda'
     },
     {
       id: 6,
-      src: 'https://images.pexels.com/photos/1043475/pexels-photo-1043475.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      alt: 'Elena Carolina y Esteban - Felicidad'
-    }
+      src: bodaCaro6,
+      alt: 'Elena Carolina y Esteban - Familia y amigos'
+    },
   ];
 
   const openModal = (index: number) => {
@@ -74,13 +82,28 @@ const PhotoGallery: React.FC = () => {
             Nuestros Momentos
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mb-6"></div>
-          <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+          <p className="text-lg text-charcoal text-opacity-70 max-w-2xl mx-auto">
             Cada fotografía cuenta una parte de nuestra historia de amor
           </p>
         </div>
         
         {/* Masonry Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className='flex justify-center'>
+        <div className="carousel carousel-center bg-neutral rounded-box max-w-sm space-x-4 p-4">
+          {photos.map((photo, index) => (
+          <div
+           className="carousel-item"
+           onClick={() => openModal(index)}
+           >
+             <div className="w-72 sm:w-56 xs:w-48 aspect-[3/2]">
+            <img
+              src={photo.src}
+              className="rounded-box w-full h-full object-cover"/>
+              </div>
+          </div>))}
+        </div>
+        </div>
+        {/* <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
           {photos.map((photo, index) => (
             <div
               key={photo.id}
@@ -99,7 +122,7 @@ const PhotoGallery: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         
         {/* Modal */}
         {selectedImage !== null && (
