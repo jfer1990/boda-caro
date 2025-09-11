@@ -22,7 +22,7 @@ const Header: React.FC = () => {
         </div>
         
         <p className="text-xl md:text-2xl font-light mb-2 text-blue-100">
-          4 de octubre de 2024
+          4 de octubre de 2025
         </p>
         
         <p className="text-lg md:text-xl text-blue-200 mb-4">

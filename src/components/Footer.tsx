@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-white/20">
           <p className="text-white/40 text-xs">
-            © 2024 Elena Carolina & Esteban - 4 de Octubre, Mérida, Yucatán
+            © 2025 Elena Carolina & Esteban - 4 de Octubre, Mérida, Yucatán
           </p>
         </div>
       </div>
