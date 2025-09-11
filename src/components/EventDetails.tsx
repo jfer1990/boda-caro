@@ -2,9 +2,9 @@ import React from 'react';
 import { MapPin, Clock, Calendar, ExternalLink } from 'lucide-react';
 
 const EventDetails: React.FC = () => {
-  const openGoogleMaps = (address: string) => {
-    const encodedAddress = encodeURIComponent(address);
-    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+  const openGoogleMaps = (slug: string) => {
+    //const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+    const mapsUrl = `https://maps.app.goo.gl/${slug}`
     window.open(mapsUrl, '_blank');
   };
 
@@ -35,6 +35,7 @@ const EventDetails: React.FC = () => {
                 <MapPin className="w-8 h-8 text-muted-green" />
               </div>
               <h3 className="font-serif text-2xl text-charcoal mb-2">Ceremonia Religiosa</h3>
+              <h4 className="font-serif text-muted-grey text-charcoal mb-2">Oficiada por el Pbro. Armando Obregón Patrón</h4>
             </div>
             
             <div className="space-y-4 text-center mb-6">
@@ -45,12 +46,12 @@ const EventDetails: React.FC = () => {
               
               <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Clock className="w-4 h-4" />
-                <span>[Hora por confirmar]</span>
+                <span>18:00 hrs</span>
               </div>
               
               <div className="pt-4 border-t border-cream/50">
                 <p className="text-charcoal text-opacity-70 text-sm mb-2">
-                  [Dirección de la iglesia por confirmar]
+                  C. 23 200, García Ginerés, 97070 Mérida, Yuc.
                 </p>
                 <p className="text-charcoal text-opacity-60 text-xs">
                   Mérida, Yucatán
@@ -59,7 +60,7 @@ const EventDetails: React.FC = () => {
             </div>
             
             <button
-              onClick={() => openGoogleMaps('Mérida, Yucatán')}
+              onClick={() => openGoogleMaps('r9DzxABuCNJBiwoZ6')}
               className="w-full bg-muted-green hover:bg-muted-green/90 text-white font-medium py-3 px-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-[1.02]"
             >
               <ExternalLink className="w-4 h-4" />
@@ -76,6 +77,8 @@ const EventDetails: React.FC = () => {
                 <MapPin className="w-8 h-8 text-gold" />
               </div>
               <h3 className="font-serif text-2xl text-charcoal mb-2">Recepción</h3>
+              <h4 className="font-serif text-muted-grey text-charcoal mb-2">Al concluir la misa nos encantaría que nos acompañes a la recepción en el <i>Hotel Palacio Maya.</i></h4>
+
             </div>
             
             <div className="space-y-4 text-center mb-6">
@@ -86,12 +89,12 @@ const EventDetails: React.FC = () => {
               
               <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Clock className="w-4 h-4" />
-                <span>[Hora por confirmar]</span>
+                <span>20:00 hrs</span>
               </div>
               
               <div className="pt-4 border-t border-cream/50">
                 <p className="text-charcoal text-opacity-70 text-sm mb-2">
-                  [Dirección del salón por confirmar]
+                  C. 62 327, Centro, 97000 Mérida, Yuc.
                 </p>
                 <p className="text-charcoal text-opacity-60 text-xs">
                   Mérida, Yucatán
@@ -100,7 +103,7 @@ const EventDetails: React.FC = () => {
             </div>
             
             <button
-              onClick={() => openGoogleMaps('Mérida, Yucatán')}
+              onClick={() => openGoogleMaps('QNtRQ85gYGJj3vPa9')}
               className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 px-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-[1.02]"
             >
               <ExternalLink className="w-4 h-4" />

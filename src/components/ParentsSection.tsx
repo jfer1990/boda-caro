@@ -69,7 +69,7 @@ const ParentsSection: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <p className="text-lg font-medium text-charcoal">
-                    Humberto Pacheco
+                    Jorge Humberto Pacheco Río (Q.E.P.D.)
                   </p>
                   <p className="text-charcoal text-opacity-60 text-sm">Papá</p>
                 </div>
@@ -78,9 +78,86 @@ const ParentsSection: React.FC = () => {
                 
                 <div>
                   <p className="text-lg font-medium text-charcoal">
-                    Lili Tamayo
+                    Lilia Esther Tamayo Erguera
                   </p>
                   <p className="text-charcoal text-opacity-60 text-sm">Mamá</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto mt-20">
+        <div className="text-center mb-16">
+          <Users className="w-8 h-8 text-gold mx-auto mb-6" />
+          <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-4">
+            Nuestros Padrinos
+          </h2>
+          <div className="w-16 h-px bg-gold mx-auto mb-6"></div>
+          <p className="text-lg text-charcoal text-opacity-70 max-w-2xl mx-auto">
+            Con el cariño y acompañamiento de nuestros padrinos
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+          {/* Bride's Parents */}
+          <div className="text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-soft border border-cream/50 relative overflow-hidden">
+              <div className="absolute top-4 right-4 w-1 h-1 bg-gold/30 rounded-full animate-pulse"></div>
+              
+              <div className="w-16 h-16 bg-muted-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="w-8 h-8 text-muted-green" fill="currentColor" />
+              </div>
+              
+              <h3 className="font-serif text-2xl text-charcoal mb-6">
+                Padrinos de la Novia
+              </h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <p className="text-lg font-medium text-charcoal">
+                    Luis Fernando Rodríguez Fernández
+                  </p>
+                </div>
+                
+                <div className="w-8 h-px bg-gold/30 mx-auto"></div>
+                
+                <div>
+                  <p className="text-lg font-medium text-charcoal">
+                    Gladys Elena Díaz Aguilar
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Groom's Parents */}
+          <div className="text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-soft border border-cream/50 relative overflow-hidden">
+              <div className="absolute top-4 left-4 w-1 h-1 bg-soft-blue/40 rounded-full animate-pulse animation-delay-1000"></div>
+              
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="w-8 h-8 text-gold" fill="currentColor" />
+              </div>
+              
+              <h3 className="font-serif text-2xl text-charcoal mb-6">
+                Padrinos del Novio
+              </h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <p className="text-lg font-medium text-charcoal">
+                    Alex Iván Tamayo Erguera
+                  </p>
+                </div>
+                
+                <div className="w-8 h-px bg-gold/30 mx-auto"></div>
+                
+                <div>
+                  <p className="text-lg font-medium text-charcoal">
+                    Lilia Esther Tamayo Erguera
+                  </p>
                 </div>
               </div>
             </div>
