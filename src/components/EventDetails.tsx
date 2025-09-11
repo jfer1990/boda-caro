@@ -41,7 +41,7 @@ const EventDetails: React.FC = () => {
             <div className="space-y-4 text-center mb-6">
               <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Calendar className="w-4 h-4" />
-                <span>4 de Octubre, 2024</span>
+                <span>4 de Octubre, 2025</span>
               </div>
               
               <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
@@ -84,7 +84,7 @@ const EventDetails: React.FC = () => {
             <div className="space-y-4 text-center mb-6">
               <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">
                 <Calendar className="w-4 h-4" />
-                <span>4 de Octubre, 2024</span>
+                <span>4 de Octubre, 2025</span>
               </div>
               
               <div className="flex items-center justify-center gap-2 text-charcoal text-opacity-70">

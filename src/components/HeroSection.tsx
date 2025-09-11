@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
       {/* Background Image */}
       {/* <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop')] bg-cover bg-center opacity-10"></div> */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${background})` }}
       ></div>
       <div className="absolute top-20 left-10 w-3 h-3 bg-gold/30 rounded-full animate-pulse"></div>
@@ -43,12 +43,12 @@ const HeroSection: React.FC = () => {
               />
         </div>
         
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-charcoal mb-6 leading-tight">
+        <h1 className="font-serif font-tangerine text-[3.35em] md:text-6xl lg:text-7xl text-charcoal mb-6 leading-tight">
           Elena Carolina 
-          <span className="block text-2xl md:text-3xl lg:text-4xl text-muted-green mt-3 font-light">
+          <span className="block font-tangerine text-2xl md:text-3xl lg:text-4xl text-muted-grey mt-3 font-light">
             &
           </span>
-          <span className="block mt-2">Esteban </span>
+          <span className="block mt-2 font-tangerine" >Esteban </span>
         </h1>
         
         <div className="w-24 h-px bg-gold mx-auto mb-8"></div>
