@@ -104,10 +104,12 @@ const GiftSection: React.FC = () => {
             >
               <X className="w-6 h-6" />
             </button>
-            <h3 className="text-xl font-semibold mb-4">Datos Bancarios SPEI</h3>
-            <p className="text-gray-700 mb-2"><strong>Nombre:</strong> María Pérez</p>
-            <p className="text-gray-700 mb-2"><strong>CLABE:</strong> 012345678901234567</p>
-            <p className="text-gray-700 mb-2"><strong>Cuenta:</strong> 1234567890</p>
+            <h3 className="text-xl text-gray-900 font-semibold mb-4">Datos Bancarios SPEI</h3>
+            <p className="text-gray-700 mb-2"><strong>Banco:</strong> Banorte</p>
+            <p className="text-gray-700 mb-2"><strong>Nombre:</strong> Elena Carolina Rodríguez Díaz</p>
+            <p className="text-gray-700 mb-2"><strong>CLABE:</strong> 072910012841460627</p>
+            <p className="text-gray-700 mb-2"><strong>Cuenta:</strong> 1284146062</p>
+            <p className="text-gray-700 mb-2"><strong>No. Tarjeta:</strong> 5264246817601577</p>
             <p className="text-gray-500 text-sm mt-4 italic">
               Copien estos datos en su app bancaria para realizar la transferencia.
             </p>

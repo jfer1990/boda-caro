@@ -209,7 +209,11 @@ const RSVPForm: React.FC = () => {
                       ))}
                     </div>
                   )}
-
+                  <p>
+                   <span className="text-sm text-charcoal text-opacity-70 flex items-center gap-2">
+                    Si hubiera algún cambio en su asistencia, por favor avísanos antes del sábado 27 de Septiembre. ¡Gracias!
+                  </span>
+                  </p>
                   <button
                     onClick={confirmAttendance}
                     className="w-full bg-gradient-to-r from-muted-green to-muted-green/90 hover:from-muted-green/90 hover:to-muted-green text-black font-medium py-4 px-6 rounded-full transition-all duration-300 transform hover:scale-[1.02] shadow-soft"

@@ -24,7 +24,7 @@ const ParentsThought: React.FC = () => {
           <p className="text-lg text-charcoal text-opacity-70 font-light">
             Con todo nuestro amor,
             <br />
-            <span className="font-medium text-muted-green">Las familias Rodríguez-Díaz y Pacheco-Tamayo</span>
+            <span className="font-medium text-muted-green">Las familias Rodríguez Díaz y Pacheco Tamayo</span>
           </p>
         </div>
       </div>
