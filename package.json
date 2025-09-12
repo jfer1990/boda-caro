@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "devmode": "node server/index.js"
+    "devmode": "node server/index.js",
+    "start": "node server/index.js"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
