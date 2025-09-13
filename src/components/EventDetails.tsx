@@ -35,7 +35,7 @@ const EventDetails: React.FC = () => {
                 <MapPin className="w-8 h-8 text-muted-green" />
               </div>
               <h3 className="font-serif text-2xl text-charcoal mb-2">Ceremonia Religiosa</h3>
-              <h4 className="font-serif text-muted-grey text-charcoal mb-2">Oficiada por el Pbro. Armando Obregón Patrón</h4>
+              <h4 className="font-serif text-muted-grey text-charcoal mb-2">Oficiada por el Pbro. Armando Obregón Patrón en el Convento de las Misioneras Guadalupanas del Espíritu Santo.</h4>
             </div>
             
             <div className="space-y-4 text-center mb-6">
