@@ -321,5 +321,14 @@
     "companions": ["Sergio Luis Prieto Silva"],
     "family": "n/a",
     "slug": "maria-martinez-her"
+  },
+  {
+    "id": 36,
+    "name": "Test",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["dabum"],
+    "family": "n/a",
+    "slug": "test"
   }
 ]
