@@ -104,7 +104,7 @@ const RSVPForm: React.FC = () => {
         name: selectedGuest.name,
         maxGuests: selectedGuest.maxGuests,
         confirmed: true,
-        companions: selectedCompanions,
+        confirmedCompanions: selectedCompanions,
       };
 
       const res = await fetch("/confirm-assistance", {
