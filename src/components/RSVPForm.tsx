@@ -104,7 +104,7 @@ const RSVPForm: React.FC = () => {
         name: selectedGuest.name,
         maxGuests: selectedGuest.maxGuests,
         confirmed: true,
-        companions: selectedCompanions,
+        confirmedCompanions: selectedCompanions,
       };
 
       const res = await fetch("/confirm-assistance", {
@@ -213,6 +213,7 @@ const RSVPForm: React.FC = () => {
                    <span className="text-sm text-charcoal text-opacity-70 flex items-center gap-2">
                     Si hubiera algún cambio en su asistencia, por favor avísanos antes del sábado 27 de Septiembre. ¡Gracias!
                   </span>
+              
                   </p>
                   <button
                     onClick={confirmAttendance}
@@ -221,6 +222,7 @@ const RSVPForm: React.FC = () => {
                     Confirmar Asistencia
                   </button>
                 </div>
+                
               )}
 
               {/* ALERTA SI NO EXISTE INVITADO */}
@@ -252,6 +254,12 @@ const RSVPForm: React.FC = () => {
           )}
         </div>
       </div>
+     <span className="px-3 block mt-3 text-xs text-gray-500 italic text-center leading-relaxed">
+      Durante la celebración podrán disfrutar de vitroleras de mojito, clericot y margaritas. 
+      Si alguien desea llevar su propio alcohol, el hotel cobrará un descoché de 
+      <strong className="text-gray-600"> $150 MXN </strong> 
+      por botella de acuerdo con sus políticas.
+    </span>
     </section>
   );
 };
