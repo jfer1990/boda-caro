@@ -8,6 +8,8 @@ import EventDetails from './components/EventDetails';
 import RSVPForm from './components/RSVPForm';
 import GiftSection from './components/GiftSection';
 import Footer from './components/Footer';
+import EditGuests from './components/EditGuests';
+import 'antd/dist/reset.css'
 
 function App() {
   return (
@@ -46,6 +48,15 @@ function App() {
             </div>
           }
         />
+        <Route
+          path="/editGuests"
+          element={
+          <div className="min-h-screen bg-ivory">
+              <EditGuests/>
+              </div>
+          }
+          />
+      
       </Routes>
     </Router>
   );

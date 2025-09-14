@@ -20,18 +20,14 @@
   {
     "id": 3,
     "name": "Lilia Esther Tamayo Erguera",
-    "maxGuests": 7,
+    "maxGuests": 3,
     "confirmed": false,
     "companions": [
       "Inocencio Ochoa Tamayo",
-      "Elizabeth Tamayo Erguera",
-      "Yolanda Martínez",
-      "Lizbeth Briceño",
-      "Víctor Becerra",
-      "Acompañante 1",
-      "Acompañante 2"
+      "Invitado 1",
+      "Invitado 2"
     ],
-    "family": "Aquí hay 2 familiares y 5 amigos…",
+    "family": "",
     "slug": "lilia-tamayo-erg"
   },
   {
@@ -330,5 +326,59 @@
     "companions": ["dabum"],
     "family": "n/a",
     "slug": "test"
+  },
+  {
+    "id": 37,
+    "name": "Yolanda Martínez Pérez",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Acompañante"],
+    "family": "n/a",
+    "slug": "yolanda-mar"
+  },
+  {
+    "id": 38,
+    "name": "Lizbeth Briceño Brito",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": [],
+    "family": "n/a",
+    "slug": "lizbeth-bri"
+  },
+  {
+    "id": 39,
+    "name": "Beatriz Colli Coral",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": [],
+    "family": "n/a",
+    "slug": "beatriz-col"
+  },
+  {
+    "id": 40,
+    "name": "Víctor Becerra",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": [],
+    "family": "n/a",
+    "slug": "vcitor-bec"
+  },
+  {
+    "id": 41,
+    "name": "Jaime González",
+    "maxGuests": 1,
+    "confirmed": false,
+    "companions": ["Acompañante"],
+    "family": "n/a",
+    "slug": "jaime-gon"
+  },
+  {
+    "id": 42,
+    "name": "Irene Maya",
+    "maxGuests": 0,
+    "confirmed": false,
+    "companions": [],
+    "family": "n/a",
+    "slug": "irene-may"
   }
 ]
