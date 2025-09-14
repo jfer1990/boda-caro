@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Check, AlertCircle, Users, Star } from 'lucide-react';
-import guestsData from '../data/guests.json';
+//import guestsData from '../data/guests.json';
 import { useParams } from 'react-router-dom';
 
 interface Guest {
@@ -19,12 +19,28 @@ const RSVPForm: React.FC = () => {
   const [selectedCompanions, setSelectedCompanions] = useState<string[]>([]);
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [guestsData, setGuestsData] = useState<Guest[]>([]);
 
   const { slug } = useParams<{ slug: string }>();
 
+  useEffect(()=>{
+    (
+      async()=>{
+        const res = await fetch('/preGuests');
+        const data = await res.json();
+        console.log("preguests", data);
+        debugger; 
+        setGuestsData(data);
+        debugger;
+      }
+    )();
+  },[])
+
   // Si hay slug, seleccionar al invitado correspondiente
   useEffect(() => {
-    if (slug) {
+    debugger; 
+    if (slug && guestsData.length > 0) {
+      debugger; 
       const guest = guestsData.find(g => g.slug === slug);
       if (guest) {
         setSelectedGuest(guest);
@@ -32,7 +48,7 @@ const RSVPForm: React.FC = () => {
         setShowSuggestions(false);
       }
     }
-  }, [slug]);
+  }, [slug, guestsData]);
 
   // Autocompletador por nombre
   useEffect(() => {

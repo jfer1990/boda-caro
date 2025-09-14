@@ -25,7 +25,19 @@ const guestSchema = new mongoose.Schema({
   confirmados: Number,
 });
 
+const preGuestSchema = new mongoose.Schema({
+  id: Number,
+  name: String,
+  maxGuests: Number,
+  confirmed: Boolean,
+  companions: [String],
+  family: String,
+  slug: String
+});
+
 const Guest = mongoose.model("Guest", guestSchema);
+const PreGuest = mongoose.model("PreGuest", preGuestSchema);
+
 
 
 // Fix __dirname since it doesn't exist in ESM
@@ -89,6 +101,40 @@ app.get("/guests", async (req, res) => {
     res.json(guests);
   } catch (err) {
     res.status(500).json({ error: "Database error", details: err.message });
+  }
+});
+
+// Get all preGuests
+app.get("/preGuests", async (req, res) => {
+  try {
+    const preguests = await PreGuest.find();
+    res.json(preguests);
+  } catch (err) {
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// Get preGuest by slug
+app.get("/preGuests/:slug", async (req, res) => {
+  try {
+    const preguest = await PreGuest.findOne({ slug: req.params.slug });
+    if (!preguest) return res.status(404).json({ error: "PreGuest not found" });
+    res.json(preguest);
+  } catch (err) {
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+app.put("/preGuests/:id", async (req, res) => {
+  const { id } = req.params;
+  const updateData = req.body;
+
+  try {
+    const preGuest = await PreGuest.findByIdAndUpdate(id, updateData, { new: true });
+    if (!preGuest) return res.status(404).json({ error: "PreGuest not found" });
+    res.json(preGuest);
+  } catch (err) {
+    res.status(500).json({ error: "Server error", details: err.message });
   }
 });
 
