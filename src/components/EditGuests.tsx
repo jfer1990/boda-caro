@@ -85,12 +85,6 @@ const EditGuests: React.FC = () => {
       render: (c: string[]) => c.length 
     },
     { 
-      title: "Confirmado", 
-      dataIndex: "confirmed", 
-      key: "confirmed", 
-      render: (c: boolean) => c ? <Tag color="green">Sí</Tag> : <Tag color="red">No</Tag> 
-    },
-    { 
       title: "", 
       key: "action",
       render: (_: any, record: PreGuest) => (
@@ -101,6 +95,7 @@ const EditGuests: React.FC = () => {
 
   return (
     <>
+    
       <Table rowKey="_id" dataSource={preguests} columns={columns} />
 
       <Modal
